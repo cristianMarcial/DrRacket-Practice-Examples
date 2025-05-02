@@ -17,7 +17,6 @@
   )
 )
 
-; idea de Diego
 (define (evensplit2 x)
   (cond ((null? x) x)
         (else (oddsplit (cdr x))) ; tengo que acceder al 2nd elm haciendo 1st CDR a x, luego el CAR de eso

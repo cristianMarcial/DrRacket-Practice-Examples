@@ -1,7 +1,5 @@
 #lang racket
 
-;; SCOPE Lec 5
-
 (define (inner x) (+ x 5))
 
 (define (outer1 x) (inner x))

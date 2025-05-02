@@ -1,7 +1,5 @@
 #lang racket
 
-;; pr/ btw en el examen vienen preguntas como estas. 
-
 ;; (filter > '(1 2 3 4 5) 3) --> '(4 5)
 
 (define (filter f x n)

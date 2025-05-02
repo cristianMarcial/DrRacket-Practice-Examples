@@ -18,7 +18,7 @@
 
 ;; (member 3 '(1 2 3 4 5)) --> #T
 
-(define (member x y);; alguien: busca el 1st elem, si no es, busca (recursion) el sig. hasta que haya una lista vacio o lo encuentres
+(define (member x y) ;; busca el 1st elem, si no es, busca (recursion) el sig. hasta que haya una lista vacio o lo encuentres
   (cond ((null? y) #F)
         ((equal? (car y) x) #T) ;; son iguales el elem de y & x
         (else (member x (cdr y)))
@@ -31,7 +31,7 @@
   (cond ((null? x) x)
         ((null? y) y)
         ((member (car x) y) (cons (car x) (intersect (cdr x) y))) ;; si car x esta en y, y si no... \/
-        (else (intersect (cdr x) y))    ;;haz lo mismo pero con el sig.
+        (else (intersect (cdr x) y))    ;; haz lo mismo pero con el sig.
   )
 )
 
